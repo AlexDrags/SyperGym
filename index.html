@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/RobotoCondensedRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta name="description"
+    content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
+  <title>Фитнес</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="header__navigation">
+          <div class="header__logo-wrapper">
+            <svg class="header__logo-image logo-image--secondary" width="69" height="24">
+              <use xlink:href="img/sprite.svg#logo-top"></use>
+            </svg>
+            <svg class="header__logo-image logo-image--primary" width="82" height="17">
+              <use xlink:href="img/sprite.svg#logo-top"></use>
+            </svg>
+            <svg class="header__logo-image logo-image" width="122" height="44">
+              <use xlink:href="img/sprite.svg#logo-top"></use>
+            </svg>
+          </div>
+          <div class="header__ring-wrapper">
+            <a href="tel:88005555555" class="header__ring-link">
+              8-800-555-55-55
+            </a>
+          </div>
+        </nav>
+        <div class="header-wrapper">
+          <div class="header__title-wrapper">
+            <div class="header__title-text">
+              <h1><span>омск</span><br />Фитнес<br /> центр</h1>
+              <p>Тренажёрный&nbsp;зал<br /> Групповые&nbsp;занятия<br /> Кардио-зона</p>
+            </div>
+            <a class="byu-button" href="#abonnement">Купить абонемент</a>
+          </div>
+          <div class="header__title-foto">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/header-tablet.webp" type="image/webp">
+              <source srcset="img/header-desktop.webp" type="image/webp">
+              <img src="img/header-desktop.png" width="500" height="556" alt="Фото тренера." loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__title-wrapper">
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900&nbsp;кв/м.</p>
+            <p>
+              Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+              спортсменов.<br /><span>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона
+                с&nbsp;40&nbsp;тренажерами. Также
+                в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+              </span>
+            </p>
+          </div>
+          <div class="about__media">
+            <div class="about__player-wrapper">
+              <div class="about__cover"></div>
+              <iframe width="320" height="167"
+                src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&wmode=transparent"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="about__foto-wrapper">
+              <picture>
+                <!-- <source media="(max-width: 767px)" srcset="img/about-mobile.webp"
+                type="image/webp"> -->
+                <source media="(max-width: 1199px)" srcset="img/about-tablet.webp" type="image/webp">
+                <source srcset="img/about-desktop.webp" type="image/webp">
+                <img src="img/about-desktop.png" width="660" height="401" alt="Тренажерный зал.">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class=footer>
+      <div class="container">
+        <div class="footer__logo-wrapper">
+          <svg class="header__logo-image logo-image--secondary" width="68" height="15">
+            <use xlink:href="img/sprite.svg#logo-bottom"></use>
+          </svg>
+          <svg class="header__logo-image logo-image--primary" width="82" height="18">
+            <use xlink:href="img/sprite.svg#logo-bottom"></use>
+          </svg>
+          <svg class="header__logo-image logo-image" width="88" height="32">
+            <use xlink:href="img/sprite.svg#logo-bottom"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <!-- <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div> -->
+
+  <script src="js/vendor.min.js"></script>
+  <script defer src="js/main.min.js"></script>
+</body>
+
+</html>
