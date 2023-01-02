@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1004,6 +1006,7 @@ button,
 }
 
 .about__player-wrapper .about__cover {
+  cursor: pointer;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1024,6 +1027,174 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+.abonements {
+  background: url("../img/rogl-decor.png") right bottom -19%, -webkit-gradient(linear, left top, left bottom, color-stop(92%, #f8f9fc), color-stop(92%, #ffffff));
+  background: url("../img/rogl-decor.png") right bottom -19%, -o-linear-gradient(top, #f8f9fc 92%, #ffffff 92%);
+  background: url("../img/rogl-decor.png") right bottom -19%, linear-gradient(to bottom, #f8f9fc 92%, #ffffff 92%);
+  background-repeat: no-repeat;
+  min-height: 920px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.abonements h2 {
+  text-align: center;
+  font-family: "Alumni Sans";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+
+/* Стиль вкладки */
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 341px;
+  overflow: hidden;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 40px;
+}
+
+/* Стиль кнопок, которые используются для открытия содержимого вкладки */
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+}
+
+.tab button.focus-visible:focus {
+  color: #102654;
+}
+
+/* Создание активного/текущего класса связи вкладки */
+
+.tab button.active {
+  -webkit-box-shadow: 0 2px #d10a42;
+  box-shadow: 0 2px #d10a42;
+  color: #102654;
+}
+
+/* Стиль содержимого вкладки */
+
+.abonements-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.abonements-list li {
+  background-color: #ffffff;
+  min-width: 360px;
+  min-height: 448px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.abonements-list li.focus-visible:focus {
+  border: 7px solid transparent;
+  -o-border-image: -o-linear-gradient(#d10a42 1%, #00359f 100%);
+  border-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #d10a42), to(#00359f));
+  border-image: linear-gradient(#d10a42 1%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.abonements-list li.focus-visible:focus a {
+  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: #ffffff;
+}
+
+.abonements-list li h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  margin-bottom: 22px;
+}
+
+.abonements-list li p {
+  margin-top: 0;
+}
+
+.abonements-list li span:first-of-type {
+  display: block;
+  position: relative;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  font-weight: 700;
+}
+
+.abonements-list li span:first-of-type span {
+  position: absolute;
+  content: "";
+  color: #102654;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  left: calc(50% - 68px);
+  bottom: 0;
+}
+
+.abonements-list li span:first-of-type span::after {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: url("../img/sprite/rub.svg");
+  width: 32px;
+  height: 42px;
+}
+
+.abonements-list a {
+  margin-top: 59px;
+  min-width: 206px;
+  min-height: 64px;
+  border: 2px solid #102654;
+}
+
+.abonements-list a.focus-visible:focus {
+  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: #ffffff;
 }
 
 .footer {
@@ -1204,11 +1375,11 @@ button,
 
   .about__media {
     min-width: 100%;
-    position: static;
+    position: relative;
   }
 
   .about__player-wrapper {
-    bottom: 113px;
+    bottom: -91px;
     left: calc(50% - 133px);
   }
 
@@ -1225,11 +1396,32 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    position: relative;
   }
 
   .about__foto-wrapper img {
     width: 100%;
+  }
+
+  .tab {
+    margin-bottom: 45px;
+  }
+
+  .tab button {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .abonements-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .abonements-list li {
+    min-width: 442px;
+    min-height: 448px;
   }
 }
 
@@ -1388,6 +1580,56 @@ button,
   .about__foto-wrapper img {
     min-height: 313px;
   }
+
+  .abonements {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, #ffffff));
+    background: -o-linear-gradient(top, #f8f9fc 95%, #ffffff 95%);
+    background: linear-gradient(to bottom, #f8f9fc 95%, #ffffff 95%);
+  }
+
+  .tab {
+    width: 290px;
+    margin-bottom: 35px;
+  }
+
+  .tab button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .abonements-list {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .abonements-list li {
+    aspect-ratio: 0.59/0.78;
+    min-width: 290px;
+    max-width: 430px;
+    width: 100%;
+    min-height: 384px;
+    max-height: 514px;
+  }
+
+  .abonements-list li h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .abonements-list li span:first-of-type {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .abonements-list li span:first-of-type span::after {
+    width: 24px;
+    height: 33px;
+  }
+
+  .abonements-list a {
+    margin-top: 50px;
+  }
 }
 
 @media (hover: hover) {
@@ -1404,5 +1646,29 @@ button,
     opacity: 0.7;
     color: #102654;
     border-color: #102654;
+  }
+
+  .tab button:hover:not(.focus-visible) {
+    color: #102654;
+  }
+
+  .abonements-list li:hover:not(.focus-visible) {
+    border: 7px solid transparent;
+    -o-border-image: -o-linear-gradient(#d10a42 1%, #00359f 100%);
+    border-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #d10a42), to(#00359f));
+    border-image: linear-gradient(#d10a42 1%, #00359f 100%);
+    border-image-slice: 1;
+  }
+
+  .abonements-list li:hover:not(.focus-visible) a {
+    background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: #ffffff;
+  }
+
+  .abonements-list a:hover:not(.focus-visible) {
+    background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: #ffffff;
   }
 }
