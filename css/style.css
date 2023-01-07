@@ -1512,9 +1512,8 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .btn {
@@ -1706,11 +1705,6 @@ button,
 
 .header__navigation .header__logo-wrapper {
   margin-right: auto;
-  margin-left: 61px;
-}
-
-.header__navigation .header__ring-wrapper {
-  margin-right: 65px;
 }
 
 .header__navigation a {
@@ -1765,7 +1759,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 83px;
+  margin-left: 20px;
   text-align: right;
 }
 
@@ -1856,11 +1850,11 @@ button,
 .about__title-wrapper {
   max-width: 355px;
   margin-left: auto;
-  margin-right: 88px;
+  margin-right: 85px;
 }
 
 .about__media {
-  min-width: 722px;
+  min-width: 660px;
   position: relative;
 }
 
@@ -2243,6 +2237,10 @@ button,
   margin-bottom: 0;
 }
 
+.coachs {
+  padding-bottom: 50px;
+}
+
 .coachs h2 {
   font-family: "Alumni Sans";
   font-style: normal;
@@ -2257,6 +2255,10 @@ button,
   padding: 0;
 }
 
+.swiper-wrapper {
+  min-width: 100%;
+}
+
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2264,6 +2266,61 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  min-height: 294px;
+}
+
+.swiper-slide .coachs__spec-wrapper > span {
+  position: absolute;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  bottom: 30px;
+  left: calc(50% - 52px);
+}
+
+.coachs__overlay {
+  display: none;
+  position: absolute;
+  background: rgba(16, 38, 84, 0.89);
+  opacity: 0;
+  color: #ffffff;
+}
+
+.swiper-slide:hover img,
+.swiper-slide:hover span {
+  display: none;
+  opacity: 0;
+}
+
+.swiper-slide:focus img,
+.swiper-slide:focus span {
+  display: none;
+  opacity: 0;
+}
+
+.swiper-slide:hover .coachs__overlay {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide:focus .coachs__overlay {
+  display: block;
+  opacity: 1;
+}
+
+.coachs__spec-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #102654;
+}
+
+.coachs__spec-wrapper img {
+  height: 100%;
+  width: 100%;
 }
 
 .footer {
@@ -2600,6 +2657,15 @@ button,
     line-height: 50px;
     text-align: center;
   }
+
+  .swiper {
+    width: 566px;
+  }
+
+  .swiper-wrapper {
+    max-width: 268px;
+    min-width: 268px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2859,6 +2925,10 @@ button,
     padding-top: 21px;
   }
 
+  .promo .promo__poster {
+    max-width: 737px;
+  }
+
   .promo .promo__poster img {
     width: 100%;
   }
@@ -2891,6 +2961,24 @@ button,
   .coachs h2 {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .coachs__container {
+    padding: 0 47px;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-wrapper {
+    max-width: 226px;
+    min-width: 226px;
+  }
+
+  .swiper-slide {
+    aspect-ratio: 0.7/0.8;
+    min-height: 274px;
   }
 }
 
