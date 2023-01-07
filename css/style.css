@@ -2238,6 +2238,7 @@ button,
 }
 
 .coachs {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -2248,6 +2249,7 @@ button,
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .coachs__container {
@@ -2269,7 +2271,7 @@ button,
   min-height: 294px;
 }
 
-.swiper-slide .coachs__spec-wrapper > span {
+.swiper-slide .coachs__spec-wrapper p {
   position: absolute;
   font-weight: 700;
   font-size: 18px;
@@ -2281,31 +2283,59 @@ button,
 
 .coachs__overlay {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
   position: absolute;
   background: rgba(16, 38, 84, 0.89);
   opacity: 0;
   color: #ffffff;
 }
 
+.coachs__overlay h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.coachs__overlay span {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.coachs__overlay ul {
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .swiper-slide:hover img,
-.swiper-slide:hover span {
+.swiper-slide:hover p {
   display: none;
   opacity: 0;
 }
 
 .swiper-slide:focus img,
-.swiper-slide:focus span {
+.swiper-slide:focus p {
   display: none;
   opacity: 0;
 }
 
 .swiper-slide:hover .coachs__overlay {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
 }
 
 .swiper-slide:focus .coachs__overlay {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
 }
 
@@ -2315,6 +2345,7 @@ button,
   bottom: 0;
   left: 0;
   right: 0;
+  overflow-y: auto;
   background-color: #102654;
 }
 
@@ -2652,10 +2683,15 @@ button,
     margin-top: 46px;
   }
 
+  .coachs {
+    padding-top: 55px;
+  }
+
   .coachs h2 {
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin-bottom: 31px;
   }
 
   .swiper {
@@ -2958,9 +2994,14 @@ button,
     padding-left: 0;
   }
 
+  .coachs {
+    padding-top: 27px;
+  }
+
   .coachs h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 43px;
   }
 
   .coachs__container {
