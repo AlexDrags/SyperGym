@@ -2520,6 +2520,65 @@ button,
   background-color: #030a1a;
 }
 
+.footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer a {
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+}
+
+.footer a.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__logo-wrapper {
+  margin-right: auto;
+}
+
+.site-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  margin-right: auto;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3258,6 +3317,14 @@ button,
     -ms-grid-column-span: -2;
     grid-column-end: -1;
   }
+
+  .site-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
@@ -3293,6 +3360,10 @@ button,
   }
 
   .promo a:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .footer a:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 }
