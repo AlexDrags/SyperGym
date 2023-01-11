@@ -2255,6 +2255,27 @@ button,
 .coachs__container {
   max-width: 1160px;
   padding: 0;
+  position: relative;
+}
+
+.coachs__container .swiper-navigation .swiper-button-next {
+  color: #afafaf;
+  right: -54px;
+  top: 64%;
+}
+
+.coachs__container .swiper-navigation .swiper-button-next::after {
+  font-size: 30px;
+}
+
+.coachs__container .swiper-navigation .swiper-button-prev {
+  color: #afafaf;
+  left: -54px;
+  top: 64%;
+}
+
+.coachs__container .swiper-navigation .swiper-button-prev::after {
+  font-size: 30px;
 }
 
 .swiper-wrapper {
@@ -2412,6 +2433,14 @@ button,
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-next {
+    right: -20px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-prev {
+    left: -20px;
   }
 }
 
@@ -2692,6 +2721,16 @@ button,
     line-height: 50px;
     text-align: center;
     margin-bottom: 31px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-next {
+    top: 61%;
+    right: 38px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-prev {
+    top: 61%;
+    left: 38px;
   }
 
   .swiper {
@@ -3006,6 +3045,24 @@ button,
 
   .coachs__container {
     padding: 0 47px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-next::after {
+    font-size: 20px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-next {
+    top: 61.2%;
+    right: 7px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-prev::after {
+    font-size: 20px;
+  }
+
+  .coachs__container .swiper-navigation .swiper-button-prev {
+    top: 61.2%;
+    left: 7px;
   }
 
   .swiper {
