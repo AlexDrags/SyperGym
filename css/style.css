@@ -2260,7 +2260,7 @@ button,
 
 .coachs__container .swiper-navigation .swiper-button-next {
   color: #afafaf;
-  right: -54px;
+  right: -62px;
   top: 64%;
 }
 
@@ -2270,7 +2270,7 @@ button,
 
 .coachs__container .swiper-navigation .swiper-button-prev {
   color: #afafaf;
-  left: -54px;
+  left: -62px;
   top: 64%;
 }
 
@@ -2298,7 +2298,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
-  bottom: 30px;
+  bottom: 6px;
   left: calc(50% - 52px);
 }
 
@@ -2322,16 +2322,24 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .coachs__overlay span {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 19px;
 }
 
 .coachs__overlay ul {
   font-size: 14px;
   line-height: 21px;
+  margin-top: 33px;
+  padding-left: 22px;
+}
+
+.coachs__overlay li {
+  margin-bottom: 13px;
 }
 
 .swiper-slide:hover img,
@@ -3077,6 +3085,18 @@ button,
   .swiper-slide {
     aspect-ratio: 0.7/0.8;
     min-height: 274px;
+  }
+
+  .coachs__overlay h3 {
+    margin-top: 41px;
+  }
+
+  .coachs__overlay ul {
+    padding-left: 11px;
+  }
+
+  .coachs__overlay li {
+    padding-left: 2px;
   }
 }
 
