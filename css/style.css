@@ -2470,6 +2470,10 @@ button,
   flex-direction: column;
 }
 
+.advantages__side-list > li > p br {
+  display: none;
+}
+
 .advantages__side-list > li > p small {
   font-weight: 400;
   font-size: 14px;
@@ -3005,6 +3009,9 @@ button,
     grid-column-start: 1;
     -ms-grid-column-span: -2;
     grid-column-end: -1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .advantages__side-list h3 {
@@ -3054,12 +3061,12 @@ button,
     padding-left: 29px;
   }
 
-  .advantages__side-list:first-of-type > li:first-of-type + li {
-    margin-left: auto;
+  .advantages__side-list:first-of-type > li:nth-child(2n) {
+    padding-left: 20px;
   }
 
-  .advantages__side-list:last-of-type > li:last-of-type {
-    margin-left: auto;
+  .advantages__side-list:last-of-type > li:nth-child(2n+1) {
+    padding-left: 20px;
   }
 
   .advantages__side-list:first-of-type > li:last-of-type {
@@ -3085,6 +3092,9 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 
   .advantages__middle-list li {
@@ -3412,6 +3422,7 @@ button,
 
   .coachs {
     padding-top: 27px;
+    padding-bottom: 70px;
   }
 
   .coachs h2 {
@@ -3468,6 +3479,10 @@ button,
     padding-left: 2px;
   }
 
+  .advantages {
+    padding-top: 37px;
+  }
+
   .advantages h2 {
     font-size: 32px;
     line-height: 38px;
@@ -3487,12 +3502,24 @@ button,
     padding-right: 15px;
   }
 
+  .advantages__side-list h3 {
+    margin-top: 8px;
+  }
+
   .advantages__side-list li {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  .advantages__side-list li:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  .advantages__side-list > li > p br {
+    display: block;
   }
 
   .advantages__side-list > li:first-of-type + li {
@@ -3513,8 +3540,25 @@ button,
     padding-left: 0;
   }
 
+  .advantages__side-list li:not(:first-of-type) .advantages__text p {
+    line-height: 23px;
+  }
+
+  .advantages__middle-list {
+    margin-top: 13px;
+  }
+
   .advantages__middle-list li {
     min-width: 100%;
+  }
+
+  .advantages__middle-list > li > p {
+    font-size: 74px;
+    margin-top: 24px;
+  }
+
+  .advantages__middle-list h3 {
+    line-height: 0;
   }
 
   .advantages__text {
