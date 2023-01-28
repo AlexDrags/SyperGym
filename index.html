@@ -39,19 +39,22 @@
         </nav>
         <div class="header-wrapper">
           <div class="header__title-wrapper">
-            <div class="header__title-text">
-              <h1><span>омск</span><br />Фитнес<br /> центр</h1>
-              <p>Тренажёрный&nbsp;зал<br /> Групповые&nbsp;занятия<br /> Кардио-зона</p>
+
+            <p>Тренажёрный&nbsp;зал<br /> Групповые&nbsp;занятия<br /> Кардио-зона</p>
+            <div>
+              <span>Омск</span>
+              <h1>Фитнес<br /> центр</h1>
             </div>
+
             <a class="byu-button" href="#abonnement">Купить абонемент</a>
           </div>
-          <div class="header__title-foto">
-            <picture>
-              <source media="(max-width: 1199px)" srcset="img/header-tablet.webp" type="image/webp">
-              <source srcset="img/header-desktop.webp" type="image/webp">
-              <img src="img/header-desktop.png" width="500" height="556" alt="Фото тренера." loading="lazy">
-            </picture>
-          </div>
+
+          <picture>
+            <source media="(max-width: 1199px)" srcset="img/header-tablet.webp" type="image/webp">
+            <source srcset="img/header-desktop.webp" type="image/webp">
+            <img src="img/header-desktop.png" width="500" height="556" alt="Фото тренера." loading="lazy">
+          </picture>
+
         </div>
       </div>
     </header>
@@ -75,8 +78,8 @@
           <div class="about__media">
             <div class="about__player-wrapper">
               <div class="about__cover" tabindex="0"></div>
-              <iframe width="320" height="167"
-                src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&wmode=transparent"
+              <iframe id="iframe" width="320" height="167"
+                src="https://www.youtube.com/embed/9TZXsZItgdw"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -540,7 +543,7 @@
               <ul>
                 <li>
                   <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи<br /> абонемент в&nbsp;подарок</p>
+                  <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
                   <a href="sitemap.html" target="_blank">Подробнее</a>
                 </li>
                 <li>
@@ -653,6 +656,17 @@
 
     <footer class=footer>
       <div class="footer__container container">
+        <div class="footer__logo-wrapper">
+          <svg class="footer__logo-image footer__logo-image--secondary" width="68" height="15">
+            <use xlink:href="img/sprite.svg#logo-bottom"></use>
+          </svg>
+          <svg class="footer__logo-image footer__logo-image--primary" width="82" height="18">
+            <use xlink:href="img/sprite.svg#logo-bottom"></use>
+          </svg>
+          <svg class="footer__logo-image footer__logo-image" width="88" height="32">
+            <use xlink:href="img/sprite.svg#logo-bottom"></use>
+          </svg>
+        </div>
         <ul class="site-list">
           <li class="site-list__item">
             <div class="footer__logo-wrapper">
@@ -668,7 +682,7 @@
             </div>
           </li>
           <li class="site-list__item site-list__item--mobile"><a href="#offer">Акции</a></li>
-          <li  class="site-list__item"><a href="#gym">Услуги</a></li>
+          <li class="site-list__item"><a href="#gym">Услуги</a></li>
           <li class="site-list__item site-list__item--mobile"><a href="#coach">Тренеры</a></li>
           <li class="site-list__item"><a href="#abonnement">Абонементы</a></li>
           <li class="site-list__item site-list__item--primary"><a href="#offer">Акции</a></li>
