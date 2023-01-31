@@ -2298,6 +2298,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 78px;
+  padding-bottom: 20px;
 }
 
 .promo__text {
@@ -2918,8 +2919,6 @@ button,
   -moz-column-gap: 28px;
   column-gap: 28px;
   padding-bottom: 43px;
-  overflow: auto;
-  max-height: 242px;
 }
 
 .reviews__container .reviews__swiper-slide > div picture {
@@ -3155,13 +3154,19 @@ button,
   }
 */
 
-@media (max-width: 1284px) {
+@media (max-width: 1330px) {
   .coachs__container .swiper-navigation .swiper-button-next {
     right: -40px;
   }
 
   .coachs__container .swiper-navigation .swiper-button-prev {
     left: -40px;
+  }
+}
+
+@media (max-width: 1284px) {
+  .coachs__container {
+    max-width: 1090px;
   }
 }
 
@@ -3173,11 +3178,11 @@ button,
   }
 
   .coachs__container .swiper-navigation .swiper-button-next {
-    right: -20px;
+    right: -35px;
   }
 
   .coachs__container .swiper-navigation .swiper-button-prev {
-    left: -20px;
+    left: -35px;
   }
 }
 
@@ -4135,7 +4140,7 @@ button,
   }
 
   .promo a {
-    margin-bottom: 51px;
+    margin-bottom: 31px;
     min-width: 202px;
     min-height: 39px;
   }
@@ -4470,7 +4475,6 @@ button,
     min-width: 226px;
     max-width: 556px;
     padding-bottom: 20px;
-    max-height: 335px;
   }
 
   .reviews__container .reviews__swiper-slide img {
